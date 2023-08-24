@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Edit Profile</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Profile</h1>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <div class="profile-image">
+                <img id="profile-preview" src="default-profile.jpg" alt="">
+            </div>
+            <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
+            
+            <label for="nik">NIK:</label>
+            <input type="text" id="nik" name="nik" placeholder="nik" required>
+
+            <label for="ubah kata sandi">Ubah Kata Sandi:</label>
+            <input type="ubah kata sandi" id="ubah kata sandi" name="ubah kata sandi" placeholder="kata sandi baru" required>
+            <label for="konfirmasi kata sandi">Konfimasi Kata Sandi:</label>
+            <textarea id="konfirmasi kata sandi" name="konfirmasi kata sandi" placeholder="masukkan ulang kata sandi"></textarea>
+            
+            <button type="submit">Save Changes</button>
+        </form>
+    </div>
+</body>
+</html>
