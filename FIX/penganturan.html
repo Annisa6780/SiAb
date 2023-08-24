@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Halaman Absen Keluar</title>
+    <title>Halaman Absen Masuk</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 
@@ -23,13 +23,13 @@
             <li><a href="absenMasuk.html" >
                 <img src="assets/icon/AbsenMasuk.png"/>
                 Absen Masuk</a></li>
-            <li><a href="absenKeluar.html"class="active">
+            <li><a href="absenKeluar.html">
                 <img src="assets/icon/AbsenKeluar.png"/>
                 Absen Keluar</a></li>
             <li><a href="rekapAbsen.html">
                 <img src="assets/icon/RekapAbsen.png"/>
                 Rekap Absen</a></li>
-            <li><a href="penganturan.html">
+            <li><a href="penganturan.html" class="active">
                 <img src="assets/icon/Settings.png"/>
                 Pengaturan</a></li>
         </ul>
@@ -38,15 +38,25 @@
 
     <div class="content">
         <!-- Konten halaman utama akan ditampilkan di sini -->
-        <div class="container-image">
-            <img src="..." class="img-fluid" alt="...">
+        <div class="container">
+            <h1>Edit Profile</h1>
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <div class="profile-image">
+                    <img id="profile-preview" src="default-profile.jpg" alt="">
+                </div>
+                <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
+                
+                <label for="nik">NIK:</label>
+                <input type="text" id="nik" name="nik" placeholder="nik" required>
+    
+                <label for="ubah kata sandi">Ubah Kata Sandi:</label>
+                <input type="ubah kata sandi" id="ubah kata sandi" name="ubah kata sandi" placeholder="kata sandi baru" required>
+                <label for="konfirmasi kata sandi">Konfimasi Kata Sandi:</label>
+                <textarea id="konfirmasi kata sandi" name="konfirmasi kata sandi" placeholder="masukkan ulang kata sandi"></textarea>
+                
+                <button type="submit">Save Changes</button>
+            </form>
         </div>
-
-        <button class="takepic"> Ambil Foto </button>
-
-        <button class="takeposition"> Refresh </button>
-
-        <button class="kirim"> Kirim </button>
     </div>
     
 </body>

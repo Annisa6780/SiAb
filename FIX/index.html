@@ -16,36 +16,31 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   </head>
   <body>
-    
-    <div id="loader" style="display: none;">
-      <img src="assets/images/200.gif" alt="icon" class="loading-icon">
-    </div>
-    <div class="global-container">
-        <div class="card login-form">
-            <div class="card-body">
-                <h1 class="card-title text-center">Selamat Datang Di SiAb</h1>
-            </div>
-            <div class="logo">
-              <img src="assets/images/logo.png" alt="Logo PT. Multi Power Abadi">
-            </div> <!-- Batas Setting logo-->
-            <div class="card-text">
-                <form> <!-- <form action="masuk.php" method=POST> -->
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                      <!-- tambahkan required di dalam input email dan pass-->
-                    <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" >
-                    </div>
-                    <div class="d-grid gap-2">
-                    <a type="submit" class="btn btn-primary" href="absenMasuk.html">Masuk</a>
-                    
-                    </div>
-                  </form>
-            </div> <!-- Batas Setting form-->
-        </div> <!-- Batas Setting card login-->
-    </div> <!-- Batas Setting container-->
+
+    <div class="login-form">
+      <div class="body">
+          <h1 class="title text-center">Selamat Datang Di SiAb</h1>
+      </div>
+      <div class="logo">
+        <img src="assets/images/logo.png" alt="Logo PT. Multi Power Abadi">
+      </div> <!-- Batas Setting logo-->
+      <div class="text">
+          <form> <!-- <form action="masuk.php" method=POST> -->
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <!-- tambahkan required di dalam input email dan pass-->
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" >
+              </div>
+              <div class="d-grid gap-2">
+              <a type="submit" class="btn btn-primary" href="absenMasuk.html">Masuk</a>
+              
+              </div>
+            </form>
+      </div> <!-- Batas Setting form-->
+  </div> <!-- Batas Setting card login-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
 </html>
