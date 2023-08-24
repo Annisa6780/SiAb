@@ -1,0 +1,95 @@
+html, body{
+    height: 100%;
+    background-color: #fff;
+}
+
+.global-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+}
+
+.login-form{
+    width: 694dp;
+    height: 75dp;
+    padding: 20px;
+    border-radius: 10px !important;
+    font-family: 'Noto Serif', serif;
+}
+
+input[type="email"],
+input[type="password"]{
+    background: gray;
+    color: #fff;
+    border:  2px solid #000;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+input[type="email"] :focus,
+input[type="password"]:focus{
+    outline: none;
+    border: none;
+    background: #808080;
+    color: #fff;
+    margin: 0;
+}
+.card-title{
+    font-weight: 900;
+    padding-top: 20px;
+}
+
+.card-text{
+    font-family: 'Crimson Text', serif;
+}
+.btn{
+    background: #b00f0f !important;
+    color: #fff;
+    transform: translateY(10px);
+    font-size: 14px;
+    border-radius: 10px !important;
+}
+
+.logo{
+    justify-content: center;
+    display: flex;
+    margin-top: 80dp;
+    margin-bottom: 80dp;
+}
+/* batas akhir style login*/
+
+.konten-kanan {
+    background: #fff;
+
+}
+
+.konten .konten-kiri {
+    background: #b00f0f;
+}
+
+.konten .konten-kiri .navbar {
+  width: 200px;
+  height: 100%;
+  background-color: #f1f1f1;
+  position: fixed;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #555;
+  color: white;
+}

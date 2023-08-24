@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Halaman Absen Masuk</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+
+    <!-- setting Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Noto+Serif:wght@800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+          display: flex;
+          margin: 0;
+          padding: 0;
+        }
+        
+        .left-side {
+          background-color: red;
+          color: white;
+          width: 30%;
+          padding: 20px;
+        }
+        
+        .right-side {
+          flex: 1;
+          padding: 20px;
+        }
+        
+        .profile {
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+        }
+        
+        .profile img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+        
+        .menu {
+          margin-bottom: 20px;
+        }
+        
+        .map {
+          height: 300px;
+          margin-bottom: 20px;
+        }
+        
+        .photo {
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+        }
+        
+        .photo img {
+          width: 100px;
+          height: 100px;
+          margin-right: 10px;
+        }
+        
+        .buttons {
+          display: flex;
+          margin-top: 20px;
+        }
+        
+        .button {
+          margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="left-side">
+        <div class="profile">
+          <img src="profile.jpg" alt="Profile Photo">
+          <div>
+            <p>Nama User</p>
+            <p>Role User</p>
+          </div>
+        </div>
+        <div class="menu">
+          <p>Menu:</p>
+          <ul>
+            <li>Absen Masuk</li>
+            <li>Absen Keluar</li>
+            <li>Rekap Absen</li>
+            <li><i class="fa-solid fa-gear"><span>Pengaturan</span></i></li>
+            <li>Tombol Logout</li>
+          </ul>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="map">
+          <!-- Google Maps Integration -->
+        </div>
+        <div class="photo">
+          <img src="new_photo.jpg" alt="New Photo">
+          <button class="button">Buka Kamera</button>
+        </div>
+        <div class="buttons">
+          <button class="button">Refresh Lokasi</button>
+          <button class="button">Kirim</button>
+          <p>Data terkirim</p>
+        </div>
+      </div>
+    
+</body>
+</html>
