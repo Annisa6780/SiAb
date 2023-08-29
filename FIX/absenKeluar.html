@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Halaman Absen Keluar</title>
+    <title>Halaman Absen keluar</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 
@@ -13,9 +13,10 @@
 <link rel="stylesheet" href="style.css">
   
 <body>
-    <div class="sidebar">
+    <div class="navbar">
+        
         <div class="circle-image">
-            <img src="assets/images/logo.png" alt="Foto Profil">
+            <img src="assets/images/pp.jpg" alt="Foto Profil">
             
         </div>
         <p> Mawar Binti Melati</p>
@@ -24,21 +25,42 @@
             <li><a href="absenMasuk.html" >
                 <img src="assets/icon/AbsenMasuk.png"/>
                 Absen Masuk</a></li>
-            <li><a href="absenKeluar.html"class="active">
-                <img src="assets/icon/AbsenKeluar.png"/>
+            <li><a href="absenkeluar.html" class="active">
+                <img src="assets/icon/absenkeluar.png"/>
                 Absen Keluar</a></li>
             <li><a href="rekapAbsen.html">
                 <img src="assets/icon/RekapAbsen.png"/>
                 Rekap Absen</a></li>
-            <li><a href="penganturan.html">
+            <li><a href="pengaturan.html">
                 <img src="assets/icon/Settings.png"/>
                 Pengaturan</a></li>
         </ul>
-        <p class="logout"><a href="index.html">Keluar</a></p>
+        
+        <p class="logout"><a href="index.html">
+            <img src="assets/icon/keluar.png"/> Keluar</a></p>
     </div>
 
     <div class="content">
         <!-- Konten halaman utama akan ditampilkan di sini -->
+        <div id="clock" class="clock">00:00:00</div>
+
+        <script>
+            function updateClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            const timeString = `${hours}:${minutes}:${seconds}`;
+            document.getElementById('clock').textContent = timeString;
+            }
+
+            // Update the clock every second
+            setInterval(updateClock, 1000);
+
+            // Initial clock update
+            updateClock();
+        </script>
+    </div>
         <div class="container-image">
             <img src="..." class="img-fluid" alt="...">
         </div>
