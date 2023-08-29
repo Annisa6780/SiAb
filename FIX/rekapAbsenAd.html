@@ -3,43 +3,42 @@
 <head>
     <title>Halaman Rekap Absen</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="admin.css">
 
     <!-- setting Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Noto+Serif:wght@800&display=swap" rel="stylesheet">
-<!-- Setting CSS-->
-<link rel="stylesheet" href="style.css">
+
   
 <body>
-    <div class="sidebar">
-        <div class="circle-image">
-            <img src="assets/images/logo.png" alt="Foto Profil">
-            
-        </div>
-        <p> Mawar Binti Melati</p>
+    <div class="navbar">
+
+        <p> Selamat Datang Admin</p>
+        
         <ul>
-            <li><a href="absenMasuk.html" >
-                <img src="assets/icon/AbsenMasuk.png"/>
-                Absen Masuk</a></li>
-            <li><a href="absenKeluar.html">
+            <li><a href="akun.html">
+                <img src="assets/icon/UserAdd.png"/>
+                Buat Akun</a></li>
+            <li><a href="dataAkun.html">
                 <img src="assets/icon/AbsenKeluar.png"/>
-                Absen Keluar</a></li>
-            <li><a href="rekapAbsen.html"class="active">
+                Data Akun</a></li>
+            <li><a href="rekapAbsenAd.html" class="active" >
                 <img src="assets/icon/RekapAbsen.png"/>
                 Rekap Absen</a></li>
-            <li><a href="penganturan.html">
-                <img src="assets/icon/Settings.png"/>
-                Pengaturan</a></li>
         </ul>
-        <p class="logout"><a href="index.html">Keluar</a></p>
+        
+        <p class="logout"><a href="index.html">
+            <img src="assets/icon/keluar.png"/> Keluar</a></p>
     </div>
 
     <div class="content">
         <!-- Konten halaman utama akan ditampilkan di sini -->
-        <div class="container">
-            <h1>Rekap Absen</h1>
+        <form action="/search" method="get">
+            <input type="text" name="q" placeholder="Cari">
+            <button type="submit" class="search-button">Cari</button>
+          </form>
+
             <table>
                 <thead>
                     <tr>
