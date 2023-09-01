@@ -14,7 +14,7 @@ html, body{
     margin-bottom: 30%;
 }
 
-input[type="email"],
+/*input[type="email"],
 input[type="password"]{
     width: 100%;
     background: gray;
@@ -23,19 +23,19 @@ input[type="password"]{
     border-radius: 10px;
     margin-bottom: 20%;
     padding: 5% 100% 5% 100%;
-}
+}*/
 
 .form-label {
     font-size: larger;
 }
 
-input[type="email"] :focus,
+/*input[type="email"] :focus,
 input[type="password"]:focus{
     outline: none;
     border: none;
     background: #808080;
     color: #fff; 
-}
+}*/
 .title{
     font-weight: 900;
     padding-top: 20px;
