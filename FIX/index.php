@@ -1,4 +1,10 @@
+<?php
+require ('function.php');
 
+if (isset($_COOKIE['cookie_email'])) {
+  systemCookies();
+}
+?>
 
 <!doctype html>
 <html lang="en">
