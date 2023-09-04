@@ -1,4 +1,10 @@
+<?php
+require ('function.php');
 
+if (isset($_COOKIE['cookie_email'])) {
+  systemCookies();
+}
+?>
 
 <!doctype html>
 <html lang="en">
@@ -24,19 +30,16 @@
       </div>
       <div class="logo"><img src="assets/images/logo.png" alt="Logo PT. Multi Power Abadi"></div> <!-- Batas Setting logo-->
       <div class="text">
-          <form> <!--= <form action="masuk.php" method=POST> -->
+          <form> <!-- <form action="masuk.php" method=POST> -->
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email</label>
-                <input type="text" name="username" class="form-control" placeholder="Username" required>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
               </div>
-
                 <!-- tambahkan required di dalam input email dan pass-->
               <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input id="password-field" name="password" type="password" class="form-control" placeholder="Password" required>
-	              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                <input type="password" class="form-control" id="exampleInputPassword1" >
               </div>
-
               <div class="d-grid gap-2"><a type="submit" class="btn btn-primary" href="absenMasuk.html">Masuk</a></div>
             </form>
       </div> <!-- Batas Setting form-->
@@ -44,4 +47,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
 </html>
-
